@@ -3,9 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="ColorPrimary">#B71C1C</color>
-    <color name="ColorPrimaryDark">#D32F2F</color>
-    <color name="tabsScrollColor">#1565C0</color>
-    <color name="ColorSecondary">#EF9A9A</color>
 
+    <color name="ColorPrimary">#B71C1C</color>
+    <color name="ColorPrimaryDark">#C62828</color>
+    <color name="tabsScrollColor">#1565C0</color>
+    <color name="ColorSecondary">#E8e8e8</color>
 </resources>

@@ -42,10 +42,15 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     public void btnPressed(View v){
+        Intent i;
         if(v.getId() == R.id.btnLogin){
-            Intent i = new Intent(MainActivity.this, AfterLogin.class);
-            startActivity(i);
-        }
+            i = new Intent(MainActivity.this, AfterLogin.class);
 
+        }
+        else {
+
+            i  = new Intent(MainActivity.this, SignupActivity.class);
+        }
+        startActivity(i);
     }
 }

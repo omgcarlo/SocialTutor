@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".AfterLogin"></activity>
+        <activity android:name=".SignupActivity"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,6 @@
 <resources>
-    <string name="app_name">SocialTutor</string>
+    <string name="app_name">Social Tutor</string>
     <string name="action_settings">Settings</string>
+    <string name="copyright">© INCC Group</string>
+    <string name="copyright_desc">No Rights Reserved</string>
 </resources>

@@ -8,4 +8,8 @@
     <color name="ColorPrimaryDark">#C62828</color>
     <color name="tabsScrollColor">#1565C0</color>
     <color name="ColorSecondary">#E8e8e8</color>
+
+    <color name="shadowColor">#0e0e0e</color>
+    <color name="grey">#ededed</color>
+    <color name="whitey">#ffffff</color>
 </resources>

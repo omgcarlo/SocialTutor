@@ -20,14 +20,7 @@
         android:layout_marginTop="0dp"
         android:src="@drawable/logov1"
         android:contentDescription="asdasdasd" />
-    <TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/username"
-    android:hint="Username"
-    android:fontFamily="Consolas"
-    android:layout_marginTop="230dp"
-    android:gravity="center"/>
+
 
     <EditText
         android:layout_width="match_parent"
@@ -35,24 +28,17 @@
         android:id="@+id/username_fld"
         android:gravity="center"
         android:layout_marginTop="245dp"
-        android:hint="juandelecrez"
+        android:hint="Username"
         />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/password"
-        android:hint="Password"
-        android:fontFamily="Consolas"
-        android:layout_marginTop="295dp"
-        android:gravity="center"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/password_fld"
         android:gravity="center"
-        android:layout_marginTop="305dp"
+        android:layout_marginTop="310dp"
         android:inputType="textPassword"
+        android:hint="Password"
         />
     <Button
         android:layout_width="150dp"
@@ -61,8 +47,9 @@
         android:gravity="center"
         android:layout_marginTop="360dp"
         android:layout_marginLeft="10dp"
-        android:background="@color/colorAccent"
+        android:background="@drawable/button_primary_shadow"
         android:id="@+id/btnLogin"
+        android:textColor="@color/whitey"
         android:onClick="btnPressed"/>
     <Button
         android:layout_width="150dp"
@@ -71,8 +58,20 @@
         android:gravity="center"
         android:layout_marginTop="360dp"
         android:layout_marginLeft="175dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/button_secondary_shadow"
         android:id="@+id/btnSignup"
+        android:textColor="@color/whitey"
         android:onClick="btnPressed"/>
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/copyright"
+        android:layout_marginTop="500dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/copyright_desc"
+        android:layout_marginTop="520dp"/>
 </RelativeLayout>

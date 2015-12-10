@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 /**
  * Created by hp1 on 21-01-2015.
@@ -17,4 +18,5 @@ public class Tab1 extends Fragment {
         View v =inflater.inflate(R.layout.tab_1,container,false);
         return v;
     }
+
 }

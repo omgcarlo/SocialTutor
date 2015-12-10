@@ -1,12 +1,15 @@
 package com.incc.softwareproject.socialtutor;
 
 import android.app.Activity;
+import android.location.GpsStatus;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 /**
  * Created by carlo on 07/12/2015.
@@ -61,9 +64,7 @@ public class AfterLogin extends ActionBarActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+        public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
@@ -76,4 +77,10 @@ public class AfterLogin extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void fabBtn(View v){
+        if (v.getId() == R.id.fab)
+            Toast.makeText(AfterLogin.this, "Hello you poto!", Toast.LENGTH_LONG).show();
+    }
+
 }

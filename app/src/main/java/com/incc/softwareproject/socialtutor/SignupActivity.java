@@ -3,7 +3,8 @@ package com.incc.softwareproject.socialtutor;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
-
+import android.view.View;
+import android.support.v7.app.AppCompatActivity;
 /**
  * Created by carlo on 07/12/2015.
  */
@@ -20,4 +21,8 @@ public class SignupActivity extends Activity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+    public void backBtnClicked(View v){
+        finish();
+    }
+
 }

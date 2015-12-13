@@ -7,4 +7,14 @@
     android:elevation="2dp"
     app:titleTextColor="@color/whitey"
     android:theme="@style/Base.ThemeOverlay.AppCompat.Light"
-    xmlns:android="http://schemas.android.com/apk/res/android" />
+    xmlns:android="http://schemas.android.com/apk/res/android" >\
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Social Tutor"
+        android:textSize="25sp"
+        android:textColor="@color/whitey"
+        android:fontFamily="Consolas"
+        android:layout_gravity="center"
+        android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>

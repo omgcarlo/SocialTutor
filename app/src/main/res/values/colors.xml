@@ -7,7 +7,7 @@
     <color name="ColorPrimary">#B71C1C</color>
     <color name="ColorPrimaryDark">#C62828</color>
     <color name="tabsScrollColor">#1565C0</color>
-    <color name="ColorSecondary">#E8e8e8</color>
+    <color name="ColorSecondary">#efefef</color><!-- sub bar / tabs-->
 
     <color name="shadowColor">#0e0e0e</color>
 
@@ -15,6 +15,7 @@
     <color name="whitey">#ffffff</color>
     <color name="black">#000000</color>
 
-    <color name="post_button_color">#EEEEEE</color>
+    <color name="post_button_color">#F5F5F5</color>
+    <color name="gray_bg">#E0E0E0</color>
 
 </resources>

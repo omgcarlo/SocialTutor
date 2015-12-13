@@ -10,6 +10,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+import android.widget.TextView;
+import android.graphics.Typeface;
 
 /**
  * Created by carlo on 07/12/2015.
@@ -30,6 +32,10 @@ public class AfterLogin extends ActionBarActivity {
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
 
+        //change font bai
+        TextView toolbarTitle = (TextView) toolbar.findViewById(R.id.toolbar_title);
+        Typeface myTypeface = Typeface.createFromAsset(getAssets(), "VintageOne.ttf");
+        toolbarTitle.setTypeface(myTypeface);
 
         // Creating The ViewPagerAdapter and Passing Fragment Manager, Titles fot the Tabs and Number Of Tabs.
         adapter =  new ViewPagerAdapter(getSupportFragmentManager(),Titles,Numboftabs);
@@ -52,8 +58,6 @@ public class AfterLogin extends ActionBarActivity {
 
         // Setting the ViewPager For the SlidingTabsLayout
         tabs.setViewPager(pager);
-
-
 
     }
 

@@ -14,4 +14,7 @@
     <color name="grey">#ededed</color>
     <color name="whitey">#ffffff</color>
     <color name="black">#000000</color>
+
+    <color name="post_button_color">#EEEEEE</color>
+
 </resources>

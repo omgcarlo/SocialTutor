@@ -18,4 +18,10 @@
     <color name="post_button_color">#F5F5F5</color>
     <color name="gray_bg">#E0E0E0</color>
 
+    <color name="transparent">#00FFFFFF</color>
+    <color name="grey2">#555555</color>
+    <color name="green" type="color">#4499CC00</color>
+    <color name="darkgreen">#FF669900</color>
+
+
 </resources>

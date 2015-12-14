@@ -6,13 +6,19 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 /**
  * Created by hp1 on 21-01-2015.
+ * Modified by Carlo Jacalan 12-12-2015
  */
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
     CharSequence Titles[]; // This will Store the Titles of the Tabs which are Going to be passed when ViewPagerAdapter is created
     int NumbOfTabs; // Store the number of tabs, this will also be passed when the ViewPagerAdapter is created
 
-
+    private static int[] ICONS = new int[] {
+            R.drawable.ic_home,
+            R.drawable.ic_explore,
+            R.drawable.ic_event,
+            R.drawable.ic_profile
+    };
     // Build a Constructor and assign the passed Values to appropriate values in the class
     public ViewPagerAdapter(FragmentManager fm,CharSequence mTitles[], int mNumbOfTabsumb) {
         super(fm);
@@ -52,7 +58,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return Titles[position];
+        return null;
     }
 
     // This method return the Number of tabs for the tabs Strip
@@ -60,5 +66,9 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public int getCount() {
         return NumbOfTabs;
+    }
+
+    public int getDrawableId(int position) {
+        return ICONS[position];
     }
 }

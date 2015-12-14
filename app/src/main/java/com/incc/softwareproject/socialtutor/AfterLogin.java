@@ -21,7 +21,7 @@ public class AfterLogin extends ActionBarActivity {
     ViewPager pager;
     ViewPagerAdapter adapter;
     SlidingTabLayout tabs;
-    CharSequence Titles[]={"Home","Ask","Events","Teach"};
+    CharSequence Titles[]={"Home","Explore","Events","Profile"};
     int Numboftabs =4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class AfterLogin extends ActionBarActivity {
 
         //change font bai
         TextView toolbarTitle = (TextView) toolbar.findViewById(R.id.toolbar_title);
-        Typeface myTypeface = Typeface.createFromAsset(getAssets(), "VintageOne.ttf");
+        Typeface myTypeface = Typeface.createFromAsset(getAssets(), "Admiration_Pains.ttf");
         toolbarTitle.setTypeface(myTypeface);
 
         // Creating The ViewPagerAdapter and Passing Fragment Manager, Titles fot the Tabs and Number Of Tabs.

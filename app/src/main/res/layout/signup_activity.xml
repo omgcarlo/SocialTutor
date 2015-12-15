@@ -1,23 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.Toolbar
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/tabsScrollColor"
-    android:elevation="2dp"
-    app:titleTextColor="@color/whitey"
-    android:theme="@style/Base.ThemeOverlay.AppCompat.Light"
-    xmlns:android="http://schemas.android.com/apk/res/android" >\
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="  Sign Up"
-        android:id="@+id/backBtn"
-        android:background="@color/transparent"
-        android:textColor="#ffffff"
-        android:drawableLeft="@drawable/ic_arrow_back"
-        android:textSize="21sp"
-        android:onClick="backBtnClicked"
-        />
-</android.support.v7.widget.Toolbar>
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".SignupActivity">
 
+    <include layout="@layout/sign_up_tool_bar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="130dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/onepunch_man_one_"/>
+            <Button
+                android:layout_marginTop="260dp"
+                android:layout_marginLeft="-130dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Picture"
+                android:drawableLeft="@drawable/ic_add"/>
+            <EditText
+                android:layout_marginTop="330dp"
+                android:layout_marginLeft="-260dp"
+                android:layout_width="338dp"
+                android:layout_height="wrap_content"
+                android:hint="Name"/>
+            <EditText
+                android:layout_marginTop="380dp"
+                android:layout_marginLeft="-350dp"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:hint="Birthday"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

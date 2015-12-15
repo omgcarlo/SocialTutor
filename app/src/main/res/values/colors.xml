@@ -4,13 +4,15 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="ColorPrimary">#B71C1C</color>
+    <color name="ColorPrimary">#C62828</color>
     <color name="ColorPrimaryDark">#C62828</color>
-    <color name="tabsScrollColor">#1565C0</color>
-    <color name="ColorSecondary">#efefef</color><!-- sub bar / tabs-->
+    <color name="tabsScrollColor">#ffffff</color>
+    <color name="ColorSecondary">#C62828</color><!-- #efefef sub bar / tabs-->
 
+    <color name="toolBarTxt">#E0E0E0</color>
     <color name="shadowColor">#0e0e0e</color>
 
+    <color name="fabColor">#0D47A1</color>
     <color name="grey">#ededed</color>
     <color name="whitey">#ffffff</color>
     <color name="black">#000000</color>
@@ -22,6 +24,8 @@
     <color name="grey2">#555555</color>
     <color name="green" type="color">#4499CC00</color>
     <color name="darkgreen">#FF669900</color>
+
+    <color name="blue">#1565C0</color>
 
 
 </resources>

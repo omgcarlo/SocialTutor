@@ -14,10 +14,10 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     int NumbOfTabs; // Store the number of tabs, this will also be passed when the ViewPagerAdapter is created
 
     private static int[] ICONS = new int[] {
-            R.drawable.ic_home,
-            R.drawable.ic_explore,
-            R.drawable.ic_event,
-            R.drawable.ic_profile
+            R.drawable.home,
+            R.drawable.explore,
+            R.drawable.event,
+            R.drawable.profile
     };
     // Build a Constructor and assign the passed Values to appropriate values in the class
     public ViewPagerAdapter(FragmentManager fm,CharSequence mTitles[], int mNumbOfTabsumb) {

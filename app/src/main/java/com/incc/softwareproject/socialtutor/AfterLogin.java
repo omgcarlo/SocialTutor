@@ -39,7 +39,7 @@ public class AfterLogin extends ActionBarActivity {
 
         //change font bai
         TextView toolbarTitle = (TextView) toolbar.findViewById(R.id.toolbar_title);
-        Typeface myTypeface = Typeface.createFromAsset(getAssets(), "VintageOne.ttf");
+        Typeface myTypeface = Typeface.createFromAsset(getAssets(), "IntriqueScript_PersonalUse.ttf");
         toolbarTitle.setTypeface(myTypeface);
 
         // Creating The ViewPagerAdapter and Passing Fragment Manager, Titles fot the Tabs and Number Of Tabs.

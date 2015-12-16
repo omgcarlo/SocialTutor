@@ -37,17 +37,22 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void btnPressed(View v){
+
+    public void btnPressed(View v) {
         Intent i;
-        if(v.getId() == R.id.btnLogin){
+        if (v.getId() == R.id.btnLogin) {
             i = new Intent(MainActivity.this, AfterLogin.class);
 
-        }
-        else {
+        } else {
 
-            i  = new Intent(MainActivity.this, SignupActivity.class);
+            i = new Intent(MainActivity.this, SignupActivity.class);
         }
         startActivity(i);
     }
+
+    public void backBtnClicked(View view) {
+        finish();
+    }
+
 
 }

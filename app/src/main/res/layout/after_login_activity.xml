@@ -6,12 +6,13 @@
     android:layout_height="match_parent" android:fitsSystemWindows="true"
     tools:context=".AfterLogin">
     <include layout="@layout/main_activity"></include>
-    <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
+    <android.support.design.widget.FloatingActionButton android:id="@+id/fabBtn"
         android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
         android:src="@android:drawable/ic_menu_edit"
         android:onClick="fabBtn"
         app:rippleColor="@color/colorAccent"
-        android:background="@color/fabColor"/>
+        android:background="@color/fabColor"
+        style="@style/Base.V21.Theme.AppCompat.Light.Dialog" />
 
 </android.support.design.widget.CoordinatorLayout>

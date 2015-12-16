@@ -3,6 +3,7 @@ package com.incc.softwareproject.socialtutor;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -32,8 +33,8 @@ public class AfterLogin extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.after_login_activity);
-        // Creating The Toolbar and setting it as the Toolbar for the activity
 
+        // Creating The Toolbar and setting it as the Toolbar for the activity
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
 
@@ -57,7 +58,7 @@ public class AfterLogin extends ActionBarActivity {
         tabs.setCustomTabColorizer(new SlidingTabLayout.TabColorizer() {
             @Override
             public int getIndicatorColor(int position) {
-                return getResources().getColor(R.color.tabsScrollColor);
+                return getResources().getColor(R.color.tabsScrollColor2);
             }
         });
 
@@ -83,13 +84,21 @@ public class AfterLogin extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
+        else{
+            Intent i = new Intent(AfterLogin.this, NotificationActivity.class);
+            startActivity(i);
+        }
 
         return super.onOptionsItemSelected(item);
     }
 
     public void fabBtn(View v){
-        if (v.getId() == R.id.fab)
+        if (v.getId() == R.id.fabBtn)
             Toast.makeText(AfterLogin.this, "Hello you poto!", Toast.LENGTH_LONG).show();
+    }
+
+    public void backBtnClicked(View view) {
+        finish();
     }
 
 }

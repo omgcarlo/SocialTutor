@@ -6,7 +6,7 @@
     android:layout_height="match_parent" android:fitsSystemWindows="true"
     tools:context=".SignupActivity">
 
-    <include layout="@layout/sign_up_tool_bar" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -14,33 +14,45 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:background="@color/gray_bg">
+            <include layout="@layout/sign_up_tool_bar" />
             <ImageButton
-                android:layout_marginTop="80dp"
-                android:layout_marginLeft="130dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:src="@drawable/onepunch_man_one_"
+                android:layout_gravity="center"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Course"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="College"/>
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="80sp"
+                android:textSize="25sp"
+                android:textColor="@color/black"
                 android:gravity="center"
-                android:src="@drawable/onepunch_man_one_"/>
+                android:hint="School Id number"/>
             <Button
-                android:layout_marginTop="260dp"
-                android:layout_marginLeft="-130dp"
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Choose Picture"
-                android:drawableLeft="@drawable/ic_add"/>
-            <EditText
-                android:layout_marginTop="330dp"
-                android:layout_marginLeft="-260dp"
-                android:layout_width="338dp"
-                android:layout_height="wrap_content"
-                android:hint="Name"/>
-            <EditText
-                android:layout_marginTop="380dp"
-                android:layout_marginLeft="-350dp"
-                android:layout_width="355dp"
-                android:layout_height="wrap_content"
-                android:hint="Birthday"/>
+                android:layout_marginTop="20dp"
+                android:text="Sign Up"
+                android:background="@drawable/button_secondary_shadow"
+                android:textSize="25dp"/>
         </LinearLayout>
 
     </ScrollView>

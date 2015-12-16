@@ -1,4 +1,4 @@
-package com.incc.softwareproject.socialtutor;
+package com.incc.softwareproject.socialtutor.tabs;
 
 /**
  * Created by carlo on 06/12/2015.

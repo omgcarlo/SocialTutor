@@ -1,8 +1,10 @@
-package com.incc.softwareproject.socialtutor;
+package com.incc.softwareproject.socialtutor.tabs;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import com.incc.softwareproject.socialtutor.R;
 
 /**
  * Created by hp1 on 21-01-2015.

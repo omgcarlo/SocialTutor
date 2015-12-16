@@ -1,4 +1,4 @@
-package com.incc.softwareproject.socialtutor;
+package com.incc.softwareproject.socialtutor.tabs;
 
 /**
  * Created by carlo on 06/12/2015.
@@ -9,6 +9,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.incc.softwareproject.socialtutor.R;
 
 
 public class Tab3 extends Fragment {

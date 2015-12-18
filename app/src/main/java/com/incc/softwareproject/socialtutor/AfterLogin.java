@@ -102,4 +102,9 @@ public class AfterLogin extends ActionBarActivity {
         finish();
     }
 
+    public void openProfile(View v){
+        Intent i = new Intent(AfterLogin.this, ProfileActivity.class);
+        startActivity(i);
+    }
+
 }

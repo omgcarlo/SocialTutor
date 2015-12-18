@@ -12,26 +12,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center">
-
-            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/card_view"
-                android:layout_width="368dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:elevation="4dp"
-                card_view:cardCornerRadius="4dp">
-                <ImageButton
-                    android:layout_width="fill_parent"
-                    android:layout_height="100dp"
-                    android:src="@drawable/one_punch_man_anime"/>
-                <ImageButton
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:background="@drawable/circle"
-                    android:src="@drawable/profilepic"
-                    android:layout_gravity="center"/>
-            </android.support.v7.widget.CardView>
+            <Button
+                android:id="@+id/testprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openProfile"
+                />
         </LinearLayout>
     </ScrollView>
 

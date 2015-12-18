@@ -18,9 +18,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AfterLogin"></activity>
-        <activity android:name=".SignupActivity"></activity>
-        <activity android:name=".NotificationActivity"></activity>
+        <activity android:name=".AfterLogin" />
+        <activity android:name=".SignupActivity" />
+        <activity
+            android:name=".NotificationActivity"
+            android:label="@string/title_activity_notification"
+            android:parentActivityName=".AfterLogin"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.incc.softwareproject.socialtutor.AfterLogin" />
+        </activity>
+        <activity android:name=".ProfileActivity" >
+        </activity>
     </application>
 
 </manifest>

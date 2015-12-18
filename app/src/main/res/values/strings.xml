@@ -4,4 +4,5 @@
     <string name="copyright">© INCC Group</string>
     <string name="copyright_desc">No Rights Reserved</string>
     <string name="testUserName">carlo</string>
+    <string name="title_activity_notification">Notification</string>
 </resources>
